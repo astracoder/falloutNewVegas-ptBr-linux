@@ -1,24 +1,74 @@
-1° Quando é realizado a instalação do Fallout New Vegas no Linux através da EpicGames, a estrutura do jogo é instalada no disco C: que é "emulada" para a estrutura do Windows, mas isso depende qual a localização aonde você instalou. (verifique isso).
+# Tradução Fallout New Vegas no Linux e Epic Games
 
-2° Baixar a tradução do jogo no GameVicio, TriboGamer ou Nexus Mods
-Link download Nexus Mods: https://www.nexusmods.com/newvegas/mods/72771 (Recomendado)
-Link download GameVicio: https://www.gamevicio.com/traducao/traducao-de-fallout-new-vegas-para-portugues-brasil/
-Link download Tribo Gamer: https://tribogamer.com/downloads/1087_baixar-traducao-para-fallout-new-vegas-fallout-new-vegas.html
+## Guia criado por
+[@astracoder](https://www.github.com/astracoder)
 
-3° Abrir o setup de instalação e localizar aonde o jogo está instalado, selecione o FalloutNV.exe, que geralmente a Epic Games vai criar no diretório: Home/Games/epic-games-store/drive_c/Program Files/Epic Games/FalloutNewVegas/Fallout New Vegas English
-(Possa ser que esteja em outro diretório, procure bem antes de instalar)
+Esta é uma tradução completa do jogo Fallout: New Vegas para o Português. Explore o deserto pós-apocalíptico do sudoeste dos Estados Unidos em sua língua nativa. Contribua, relate problemas e desfrute desta experiência em português no universo de Fallout!
 
-4° Entrar na pasta "FalloutNewVegas" e localizar o arquivo launcher_settings.cfg
+#
 
-5° Abra o arquivo e procure por "BinaryPath" e deixe dessa forma
+- 1° Quando é realizada a instalação do Fallout New Vegas no Linux através da EpicGames, a estrutura do jogo é instalada no disco C:, que é "emulada" para a estrutura do Windows, mas isso depende da localização onde você instalou (verifique isso).
+
+- 2° Baixar a tradução do jogo no GameVicio, TriboGamer ou Nexus Mods:
+
+    Link para download no Nexus Mods: [Nexus Mods](https://www.nexusmods.com/newvegas/mods/72771) (Recomendado) 
+
+    Link para download no GameVicio: [GameVicio](https://www.gamevicio.com/traducao/traducao-de-fallout-new-vegas-para-portugues-brasil/)
+
+    Link para download na Tribo Gamer: [Tribo Gamer](https://tribogamer.com/d ownloads/1087_baixar-traducao-para-fallout-new-vegas-fallout-new-vegas.html)
+
+- 3° Abrir o setup de instalação e localizar onde o jogo está instalado, selecione o FalloutNV.exe, que geralmente a Epic Games vai criar no diretório: Home/Games/epic-games-store/drive_c/Program Files/Epic Games/FalloutNewVegas/Fallout New Vegas English (Pode ser que esteja em outro diretório, procure bem antes de instalar)
+
+
+- 4° Entrar na pasta "FalloutNewVegas" e localizar o arquivo launcher_settings.cfg
+
+- 5° Abra o arquivo e procure por "BinaryPath" e deixe dessa forma BinaryPath=FalloutNVLauncher_gv.exe
+
+- 6° Ainda no mesmo arquivo procure por "ProcessTrackingNames" e deixe dessa forma ProcessTrackingNames=FalloutNVLauncher_gv.exe
+
+<pre><code>
 BinaryPath=FalloutNVLauncher_gv.exe
+LocalePath=Fallout New Vegas
+Languages=English, French, German, Italian, Spanish
+ParseCommandLineArguments=true
+Pass_Through_Arguments=true
+ProcessTrackingNames=FalloutNVLauncher_gv.exe
 
-6°Ainda no mesmo arquivo procure por "ProcessTrackingNames" e deixe dessa forma ProcessTrackingNames=FalloutNVLauncher_gv.exe
+BethNet_Enabled=True
+BethNet_Product_Name=Fallout New Vegas
+BethNet_Product_Version=1.0.0.0
+BethNet_Id=1oyzzFC247Mr5weLqwFm6s20rVEKHSzDv0EMkNTr1CLUhtsFKGb5WoIKsg4xtacHwuAvSRFQ6wRWcokEkel9FXaCSwnAIZBiYBOukpLpMfAxxMpdr2WKQe1QCz6uEkC/HC2NklK/9cLRuN6qTIh3sWtvoL3+KLxBt4fREh1t1VKAWgTyu3EhFbp99G3HUxHMPA==
+BethNet_Platform=EpicGamesLauncher
+BethNet_PUID_CFG_Path=%LOCALAPPDATA%\BethesdaNet\EGS
+BethNet_PUID_CFG_File=FalloutNV.cfg
+</code></pre>
 
-7° Agora abra a pasta "Fallout New Vegas English"
+- 7° Agora abra a pasta "Fallout New Vegas English"
 
-8° Localize e abra o arquivo "Fallout_default.ini"
+- 8° Localize e abra o arquivo "Fallout_default.ini", nele possui alguns parâmetros padrão de inicialização e vamos fazer uma alteração no arquivo de texto do jogo.
 
-9° Procure por "STestFile1", ele estará logo no começo do arquivo e deixe da seguinte forma STestFile1=FNV PT-BR.esp.
+- 9° Procure por "STestFile1", ele estará logo no começo do arquivo e deixe da seguinte forma STestFile1=FNV PT-BR.esp.
 
-7° Salve o arquivo e bom jogo.
+<pre><code>
+[General]
+SStartingCell=
+SCharGenQuest=00102037
+SStartingCellY=
+SStartingCellX=
+SStartingWorld=
+STestFile10=
+STestFile9=
+STestFile8=
+STestFile7=
+STestFile6=
+STestFile5=
+STestFile4=
+STestFile3=
+STestFile2=
+STestFile1=FNV PT-BR.esp
+</code></pre>
+
+- 10° Salve o arquivo e bom jogo.
+
+Todo esse guia foi feito para você, assim como eu, teve imensa dificuldade de conseguir colocar a tradução no Fallout, por ser uma estrutura Linux e o setup de instalação não conseguiu fazer de forma automática a manipulação desses parâmetros. 
+
