@@ -5,6 +5,8 @@
 
 Esta é uma tradução completa do jogo Fallout: New Vegas para o Português. Explore o deserto pós-apocalíptico do sudoeste dos Estados Unidos em sua língua nativa. Contribua, relate problemas e desfrute desta experiência em português no universo de Fallout!
 
+<img src="/falloutnv.jpg">
+
 #
 
 - 1° Quando é realizada a instalação do Fallout New Vegas no Linux através da EpicGames, a estrutura do jogo é instalada no disco C:, que é "emulada" para a estrutura do Windows, mas isso depende da localização onde você instalou (verifique isso).
@@ -68,7 +70,23 @@ STestFile2=
 STestFile1=FNV PT-BR.esp
 </code></pre>
 
-- 10° Salve o arquivo e bom jogo.
+- 10° Arquivos da tradução - Deixe todas as opções selecionadas, principalmente a FalloutNV_lang.esp e FNV PT-BR.esp
+- 
+CaravanPack.esm
+ClassicPack.esm
+DeadMoney.esm
+GunRunnersArsenal.esm
+HonestHearts.esm
+LonesomeRoad.esm
+MercenaryPack.esm
+OldWorldBlues.esm
+TribalPack.esm
+YUP - Base Game + All DLC.esm
+YUP - NPC Fixes (Base Game + All DLC).esp
+
+<img src="/loadFiles.png">
+
+- 11° Salve o arquivo e bom jogo.
 
 Todo esse guia foi feito para você, assim como eu, teve imensa dificuldade de conseguir colocar a tradução no Fallout, por ser uma estrutura Linux e o setup de instalação não conseguiu fazer de forma automática a manipulação desses parâmetros. 
 
